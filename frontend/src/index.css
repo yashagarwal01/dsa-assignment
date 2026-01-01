@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --background: 140 30% 97%;
+    --foreground: 145 20% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 145 20% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 145 20% 12%;
+
+    /* Primary (Green) */
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary */
+    --secondary: 140 30% 94%;
+    --secondary-foreground: 145 20% 12%;
+
+    /* Muted */
+    --muted: 140 30% 94%;
+    --muted-foreground: 145 10% 40%;
+
+    /* Accent */
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 140 25% 88%;
+    --input: 140 25% 88%;
+    --ring: 142 71% 45%;
+
+    --radius: 0.6rem;
+
+    /* Charts */
+    --chart-1: 142 71% 45%;
+    --chart-2: 160 84% 39%;
+    --chart-3: 43 96% 56%;
+    --chart-4: 280 87% 65%;
+    --chart-5: 0 84% 60%;
+  }
+
+  .dark {
+    --background: 145 25% 10%;
+    --foreground: 140 30% 96%;
+
+    --card: 145 25% 13%;
+    --card-foreground: 140 30% 96%;
+
+    --popover: 145 25% 13%;
+    --popover-foreground: 140 30% 96%;
+
+    --primary: 142 71% 55%;
+    --primary-foreground: 145 25% 10%;
+
+    --secondary: 145 20% 18%;
+    --secondary-foreground: 140 30% 96%;
+
+    --muted: 145 20% 18%;
+    --muted-foreground: 140 20% 65%;
+
+    --accent: 142 71% 55%;
+    --accent-foreground: 145 25% 10%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 140 30% 96%;
+
+    --border: 145 20% 18%;
+    --input: 145 20% 18%;
+    --ring: 142 71% 55%;
+
+    --chart-1: 142 71% 55%;
+    --chart-2: 160 84% 45%;
+    --chart-3: 43 96% 60%;
+    --chart-4: 280 87% 70%;
+    --chart-5: 0 84% 65%;
+  }
+}
+
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+
+  }
+  body {
+    @apply bg-background text-foreground;
+
+  }
+
+}
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
