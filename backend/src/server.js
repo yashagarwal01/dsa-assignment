@@ -17,7 +17,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:3000",
-      "http://ec2-13-48-58-202.eu-north-1.compute.amazonaws.com",
+      "http://ec2-44-192-120-24.compute-1.amazonaws.com/",
     ],
     credentials: true,
   })
